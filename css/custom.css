@@ -87,6 +87,27 @@ button {
     background-size: cover;
 }
 
+/********** hero / video **********/
+.hero-landing {
+    background-color: transparent!important;
+    position: relative;
+}
+
+.hero-landing-header {
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
 /********** banner **********/
 #banner header {
     overflow: hidden;
@@ -180,21 +201,39 @@ button {
     }
 }
 
-.mx-auto {
+.profile {
     border-radius: 100%;
     height: 180px;
     width: 180px;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.mx-auto:hover {
+.profile:hover {
     filter: grayscale(100%);
 }
 
 #harshPhoto {
-    object-position: 100% -1%;
+    background-image: url(../img/Harsh.jpg);
+    background-position: 40% 5%;
+    background-size: 175%;
 }
 
 #timPhoto {
-    object-position: 100% .25%;
+    background-image: url(../img/Tim.jpg);
+    background-position: 50% 15%;
+    background-size: 110%;
+}
+
+#jo-annPhoto {
+    background-image: url(../img/Jo.jpg);
+}
+
+#lucasPhoto {
+    background-image: url(../img/Sterrett.jpg);
+}
+
+#krishiPhoto {
+    background-image: url(../img/Krishi.jpg);
+    background-position: 50% 15%;
 }
