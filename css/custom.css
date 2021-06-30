@@ -87,17 +87,25 @@ button {
     background-size: cover;
 }
 
-/********** hero / video **********/
-.hero-landing {
+/********** banner **********/
+#banner {
     background-color: transparent!important;
     position: relative;
 }
 
-.hero-landing-header {
+#banner .hero-landing-header {
     z-index: 1;
 }
 
-.video-overlay {
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+#banner .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -106,15 +114,6 @@ button {
     width: 100%;
     height: 100%;
     object-fit: fill;
-}
-
-/********** banner **********/
-#banner header {
-    overflow: hidden;
-}
-
-#banner header img {
-    max-width: 80px;
 }
 
 /********** feature (skew background) **********/
